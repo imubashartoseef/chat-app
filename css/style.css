@@ -139,6 +139,9 @@ body {
     padding: 5px 10px;
 }
 
+.chat-message-cover {
+    padding: 10px;
+}
 .chat-message-cover .chat-row {
     display: flex;
     align-items: center;
@@ -163,4 +166,38 @@ body {
 .message-meta {
     max-width: 45%;
     margin-left: 20px;
+    background-color: #c3d7d8;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 5px;
+    z-index: 100;
+}
+.message-meta .sender-contact {
+    font-size: 12px;
+    color: #245D51;
+}
+.message-meta .sender-contact i{ 
+    z-index: 5;
+}
+    .message-meta .sender-contact i:first-child::before {
+    width: 0px;
+    height: 0px;
+    content: '';
+    border-top: 15px solid transparent;
+	border-right: 25px solid;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    z-index: -1;
+    margin-top: -5.5px;
+    margin-left: -29px;
+    color: #c3d7d8;
+}
+.message-meta .sender-contact i:first-child {
+    margin-right: 5px;
+    color: #CB8461;
+}
+.message-meta p.msg-text {
+    text-align: left;
+    font-size: 15px;
+    word-spacing: 1px;
 }
